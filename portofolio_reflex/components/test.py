@@ -306,7 +306,7 @@ def create_profile_header():
     return rx.flex(
         rx.image(
             alt="Mehdi Leqsiouer profile picture",
-            src="https://replicate.delivery/xezq/25e5yeJnZHjJnka1os74iJEUl4V7vN8RUMVA0QAkjev1eKCPB/out-0.webp",
+            src="/photo_mehdi.jpg",
             height="3rem",
             margin_right="1rem",
             border_radius="9999px",
@@ -430,7 +430,7 @@ def create_about_content():
     return rx.flex(
         rx.image(
             alt="Mehdi Leqsiouer working on a laptop",
-            src="/reflex.png",
+            src="/photo_mehdi.jpg",
             margin_right="1.5rem",
             border_radius="0.5rem",
             width="33.333333%",
@@ -457,16 +457,16 @@ def create_about_section():
         ),
         create_about_content(),
         rx.flex(
-            create_icon_with_text(icon_tag="mail", text="john.doe@email.com"),
-            create_icon_with_text(icon_tag="phone", text="+1 (555) 123-4567"),
-            create_icon_with_text(icon_tag="map-pin", text="New York, NY"),
+            create_icon_with_text(icon_tag="mail", text="leqsiouer.mehdi@outlook.com"),
+            create_icon_with_text(icon_tag="phone", text="+33 6 62 64 90 29"),
+            create_icon_with_text(icon_tag="map-pin", text="Paris, France"),
             create_icon_link(
-                href="https://github.com/johndoe",
+                href="https://github.com/Mehdi-Leqsiouer",
                 icon_tag="github",
                 text="GitHub",
             ),
             create_icon_link(
-                href="https://www.linkedin.com/in/johndoe",
+                href="https://www.linkedin.com/in/mehdi-leqsiouer",
                 icon_tag="linkedin",
                 text="LinkedIn",
             ),
@@ -490,11 +490,11 @@ def create_experience_section():
         ),
         rx.box(
             create_image_with_title(
-                image_alt="TechCorp Inc. logo",
-                image_src="https://replicate.delivery/xezq/Ji3BVndsCWYHHZgJPC2ttFkm7LZhr8lmpmXoYjiV6mHbqI8E/out-0.webp",
-                title_text="Senior Data Engineer",
+                image_alt="Orange Logo",
+                image_src="/orange_logo",
+                title_text="Data Engineer",
             ),
-            create_body_text(text="TechCorp Inc. | 2018 - Present"),
+            create_body_text(text="Orange S.A | January 2024 - Present"),
             create_bullet_list(
                 item1="Designed and implemented scalable data pipelines using Apache Spark and Airflow",
                 item2="Optimized data warehouse performance, reducing query times by 40%",
