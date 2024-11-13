@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: portofolio_reflex
+    restart: always
+    network_mode: host
+    build:
+      context: .
+      dockerfile: Dockerfile.local
+      network: host
+    env_file: .env
+    image: portofolio_reflex:latest
+    volumes:
+      - .:/app
+    ports:
+     - "8000:8000"
+     - "3000:3000"

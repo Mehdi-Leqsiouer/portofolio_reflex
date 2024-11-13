@@ -1,0 +1,14 @@
+FROM dockerproxy.repos.tech.orange/python:3.12
+
+WORKDIR /app
+COPY . .
+
+RUN  pip install -r requirements.txt
+
+ENV NPM_CONFIG_REGISTRY=https://repos.tech.orange/artifactory/api/npm/npmproxy
+
+RUN reflex init
+
+COPY . .
+
+CMD ["reflex", "run"]

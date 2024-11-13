@@ -1,0 +1,15 @@
+.github
+.gitlab
+.pytest_cache
+.vscode
+.log
+.png
+docs
+tmp
+models
+plots
+**/*.pyc
+**/*.pyo
+**/*.egg-info
+**/*.log
+**/__pycache__
